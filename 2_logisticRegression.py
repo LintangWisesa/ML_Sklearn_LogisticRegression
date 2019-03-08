@@ -27,3 +27,17 @@ model.fit(x_train, y_train)
 # m coef & b intercept
 print(model.coef_)
 print(model.intercept_)
+
+# accuracy
+print(model.score(x_train, y_train))
+
+# =========================================
+
+# prediction
+# print(x_test)
+# print(model.predict(x_test))
+print(model.predict([[40]]))
+
+# probablility
+# print(model.predict_proba(x_test))
+print(model.predict_proba([[40]]))
